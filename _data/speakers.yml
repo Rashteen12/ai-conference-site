@@ -1,0 +1,14 @@
+- name: Dr. Raya Nadir
+  title: Keynote Speaker
+  bio: Leading expert in machine learning and robotics.
+  image: /assets/images/raya.jpg
+
+- name: Prof. Emilio Tan
+  title: Panelist
+  bio: Specializes in AI policy and ethical systems.
+  image: /assets/images/emilio.jpg
+
+- name: Dr. Chloe Zane
+  title: Workshop Leader
+  bio: Conducts sessions on NLP and generative AI.
+  image: /assets/images/chloe.jpg

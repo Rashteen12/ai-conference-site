@@ -1,0 +1,21 @@
+day1:
+  - time: "09:00"
+    event: "Check-in & Coffee"
+  - time: "09:30"
+    event: "Keynote: Raya Nadir"
+  - time: "11:00"
+    event: "Panel: Ethics in AI"
+
+day2:
+  - time: "09:00"
+    event: "Workshop: NLP with Dr. Chloe Zane"
+  - time: "10:30"
+    event: "Panel: AI and Society"
+  - time: "13:00"
+    event: "Hackathon Kickoff"
+
+day3:
+  - time: "09:00"
+    event: "Closing Keynote: Emilio Tan"
+  - time: "10:30"
+    event: "Q&A + Networking"

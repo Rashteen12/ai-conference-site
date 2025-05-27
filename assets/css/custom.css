@@ -1,0 +1,153 @@
+
+/* Base Layout */
+main.container {
+  padding: 2.5rem 1.5rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.wrapper p {
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.nav-button {
+  background-color: #00bcd4;
+  color: #000;
+  padding: 0.45rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+  max-width: 200px;
+  text-align: center;
+}
+
+.nav-button:hover {
+  background-color: #009faf;
+  color: #fff;
+}
+
+/* Headings */
+h2, h3 {
+  margin-top: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+/* News Card Styling */
+.news-card {
+  background-color: #111;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.news-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  color: #00e0ff;
+}
+
+.news-card h3 a {
+  color: #00e0ff;
+  text-decoration: none;
+}
+
+.news-card h3 a:hover {
+  text-decoration: underline;
+}
+
+/* Speaker Cards */
+.speaker-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.speaker-card {
+  background: #111;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+
+.speaker-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.speaker-card h4 {
+  margin: 0.5rem 0 0.25rem;
+  color: #00e0ff;
+}
+
+.speaker-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 4rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .nav-button {
+    width: 100%;
+    max-width: none;
+  }
+
+  .speaker-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Existing styling remains... */
+
+/* Responsive Navigation Bar */
+@media (max-width: 768px) {
+  .site-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav-button,
+  .btn {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
+}
+
+/* Smooth hover animation */
+.nav-button, .btn {
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+.nav-button:hover, .btn:hover {
+  transform: scale(1.05);
+  background-color: #0097a7;
+  color: #fff;
+}
