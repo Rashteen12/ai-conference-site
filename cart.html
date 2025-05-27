@@ -1,0 +1,14 @@
+---
+layout: default
+title: Shopping Cart
+permalink: /cart.html
+---
+
+<h1>🛒 Your Cart</h1>
+
+<label><input type="checkbox" onchange="toggleDiscount(this.checked)"> I am a student (apply 50% discount)</label>
+
+<div id="cart-output">Loading cart...</div>
+
+<script src="/assets/js/cart.js"></script>
+<script>renderCart()</script>

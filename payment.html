@@ -1,0 +1,13 @@
+---
+layout: default
+title: Payment
+permalink: /tickets/payment
+---
+
+<h1>Payment Portal</h1>
+<p>You are purchasing: <code>{{ page.session | default: page.type | default: "General Admission" }}</code></p>
+<form action="/success.html" method="get">
+  <label>Name: <input type="text" name="name" required></label><br>
+  <label>Card #: <input type="text" name="card" required></label><br>
+  <button type="submit" class="cta">Pay Now</button>
+</form>

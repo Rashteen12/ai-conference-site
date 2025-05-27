@@ -1,0 +1,19 @@
+
+---
+layout: default
+title: Our Speakers
+permalink: /speakers/
+---
+
+<h2 style="text-align:center; margin-top: 2rem;">Meet Our Speakers</h2>
+<div style="overflow-x:auto;"><div style="display: flex;" class="fade-in" flex-wrap: nowrap; min-width:100%; justify-content: center; gap: 2rem; padding: 2rem;">
+  {% assign speaker_list = site.pages | where: "layout", "speaker" %}
+  {% for speaker in speaker_list %}
+  <div style="flex: 1 1 200px; max-width: 250px; background: #f7f7f7; padding: 1rem; border-radius: 12px; text-align: center;">
+    <img src="{{ speaker.image }}" alt="{{ speaker.title }}" style="width:100%; border-radius: 8px;">
+    <h3>{{ speaker.title }}</h3>
+    <p>{{ speaker.role }}</p>
+    <a href="{{ speaker.url }}" style="text-decoration:none;color:#00bcd4;font-weight:bold;"><i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
+  </div>
+  {% endfor %}
+</div>
