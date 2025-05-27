@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta SEO -->
+<meta name="description" content="AI Conference 2025 - Explore the Future of Artificial Intelligence">
+<meta name="keywords" content="AI, Conference, 2025, Machine Learning, Robotics, Ethics, Technology">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Scroll Highlight Script -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const links = document.querySelectorAll('nav a');
+    const sections = ['/', '/speakers/', '/schedule/', '/news/', '/contact/'];
+    const current = window.location.pathname;
+    links.forEach(link => {
+      if (sections.includes(current) && link.getAttribute('href') === current) {
+        link.style.borderBottom = '2px solid #00bcd4';
+      }
+    });
+  });
+</script>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/custom.css">
+  <!-- Google Analytics Placeholder -->
+  <script>
+    // Google Analytics Placeholder
+    // Replace 'UA-XXXXX-Y' with your actual tracking ID
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};
+    ga.l=+new Date; ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview');
+  </script>
+
+<style>
+  body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 2rem !important;
+    }
+
+    header p {
+      font-size: 1rem !important;
+    }
+
+    form input, form textarea {
+      font-size: 1rem;
+    }
+  }
+
+  details summary {
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  details p {
+    margin-top: 0.5rem;
+  }
+</style>
+
+
+<!-- Animations & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-in-out;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .speaker-card:hover,
+  .news-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
+  });
+</script>
+
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="logo"><img src="/assets/images/logo.svg" alt="AI Conference 2025 Logo" height="60"></a>
+    <nav class="site-nav">
+      <a class="btn" href="/">Home</a>
+      <a class="btn" href="/schedule/">Schedule</a>
+      <a class="btn" href="/speakers/">Speakers</a>
+      <a class="btn" href="/tickets/">Tickets</a>
+      <a class="btn" href="/news/">News</a>
+      <a class="btn" href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="container"><main><div class="wrapper">
+<h2 id="spotlight-dr-lina-alvarez">Spotlight: Dr. Lina Alvarez</h2>
+
+<p>We sat down with Dr. Lina Alvarez to discuss deploying large models at scale.</p>
+
+<p>Her work with multimodal systems is paving the way for AI in both research and industry.</p>
+
+<p><img src="/assets/images/news/2025-10-24-interview-alvarez.jpg" alt="Interview with Dr. Lina Alvarez" /></p>
+
+<p><img src="https://via.placeholder.com/600x300?text=Interview+Lina+Alvarez" alt="Interview with Dr. Lina Alvarez" style="margin-top: 2rem; max-width: 100%; border-radius: 10px;" /></p>
+
+</div></main></main>
+  <script src="/assets/js/cart.js"></script>
+<footer class="site-footer bg-black text-white mt-16 py-10">
+  <div class="container text-center">
+    <h2 class="text-xl font-bold">Stay Connected</h2>
+    <div class="flex justify-center gap-6 mt-4">
+      <a href="https://twitter.com" target="_blank">
+        <img src="/assets/icons/twitter.svg" alt="Twitter" width="32" height="32" />
+      </a>
+      <a href="https://linkedin.com" target="_blank">
+        <img src="/assets/icons/linkedin.svg" alt="LinkedIn" width="32" height="32" />
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <img src="/assets/icons/instagram.svg" alt="Instagram" width="32" height="32" />
+      </a>
+    </div>
+    <form class="mt-6 flex justify-center">
+      <input type="email" placeholder="Enter your email" class="px-4 py-2 rounded-l-full text-black" />
+      <button class="bg-cyan-500 hover:bg-cyan-600 px-4 py-2 rounded-r-full font-bold">Subscribe</button>
+    </form>
+    <p class="text-sm mt-4">&copy; 2025 AI Conference. All rights reserved.</p>
+  </div>
+</footer>
+</body>
